@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<link rel="shortcut icon" href="icons8-favicon-48.png" type="image/png">
+</head>
+<body>
+<h2>JavaScript Validation</h2>
+<form onsubmit="return validatePassword()">
+  First Name: 
+  <input type="text" name="firstname">
+  <br>
+  <br>
+Last Name: 
+  <input type="text" name="lastname">
+  <br>
+  <br>
+  Email:
+<input type="email" name="email" id="e1">
+<br>
+<br>
+Password:
+<input type="password" name="pwd" id="tpwd">
+<br>
+<br>
+Confirm Password:
+<input type="password" name="cpwd" id="ctpwd">
+<br>
+<br>
+  <input type="submit" value="Submit">
+</form>
+<script>
+function validatePassword() {
+        var password = document.getElementById("tpwd").value;
+        var confirmPassword = document.getElementById("ctpwd").value;
+       var em = document.getElementById("e1").value;
+
+        if (password==confirmPassword && e1=="") {
+            alert("Login.");
+        }
+        else
+        {
+       alert("login unsucessful.");
+       }
+       
+    }
+</script>
+</body>
+</html>
